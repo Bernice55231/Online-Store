@@ -1,0 +1,45 @@
+Name: Bernice Wu
+net ID: zw2911
+NYU ID(N#): N16499528
+
+Collaborators (who you talked to about the lab, what you talked about):
+
+
+Source material that you consulted:
+
+
+Other acknowledgments:
+
+
+-------------------------------------------------------------------------------
+
+Answers to exercises G1--G3:
+
+G1: 
+- Informally, what does the command above do?
+	This command searches all files in the current directory and prints out each line that contains the term "smutex";
+- Paste the first few lines of the output into answers.txt
+	./sthread.cpp:void smutex_init(smutex_t *mutex)
+	./sthread.cpp:void smutex_destroy(smutex_t *mutex)
+	./sthread.cpp:void smutex_lock(smutex_t *mutex)
+	./sthread.cpp:void smutex_unlock(smutex_t *mutex)
+	./sthread.cpp:void scond_signal(scond_t *cond, smutex_t *mutex __attribute__((unused)))
+	./sthread.cpp:void scond_broadcast(scond_t *cond, smutex_t *mutex __attribute__((unused)))
+	...
+
+G2:
+- What command can you use to search the file RequestGenerator.cpp for Task objects?
+	grep "Task" RequestGenerator.cpp
+- What command can you use to search all header files for the keyword return?
+	grep -r "return" *.h
+
+G3:
+	This command searches all the files in the current directory and prints out each line that contain smutex type methods, it has to be specified with "smutex" plus parameters parentheses.
+	The results show all the smutex methods listed in the header file that should be implemented by sthread.cpp file.
+
+-------------------------------------------------------------------------------
+
+Anything else you'd like us to know:
+
+
+Extra credit exercise(s) (describe what you coded):
